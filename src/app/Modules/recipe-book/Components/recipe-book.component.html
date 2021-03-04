@@ -1,0 +1,10 @@
+<div class="row"> 
+        <div class="col-sm-5">
+            <app-recipe-list ></app-recipe-list>
+        </div>
+        <div class="col-sm-7">
+           <!--  <app-recipe-detail *ngIf="RecipeSelected else infoText" [element]="currentElement"></app-recipe-detail> -->
+           <router-outlet ></router-outlet> 
+        </div> 
+
+</div>

@@ -20,3 +20,10 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(71ce41b2-557d-42c3-871b-721a46c1d45d)'
+    appType: 'webApp'
+    WebAppName: 'my-book-angular-app'
+    packageForLinux: 'dist/book-shop/'
